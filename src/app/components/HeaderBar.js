@@ -27,9 +27,9 @@ class HeaderBar extends React.Component {
 
           <div className= 'nav-list'>
             <ul className= 'nav-list'>
+              <li className='nav-link'><Link to='/'>About</Link></li>
               <li className='nav-link'><Link to='/skills'>Skills</Link></li>
               <li className='nav-link'><Link to='/projects'>Projects</Link></li>
-              <li className='nav-link'><Link to='/'>About</Link></li>
             </ul>
 
             <div className='nav-link dropdown-section'>

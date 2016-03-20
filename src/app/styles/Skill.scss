@@ -1,0 +1,53 @@
+.skill-item-container{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-top: 2em;
+}
+
+.skill-item{
+  margin-right: 20px;
+  padding: 12px 0;
+  min-width: 280px;
+}
+
+h4{
+  font-size: 1.5em;
+}
+
+.skill-item ul li{
+  display: inline-block;
+  float: left;
+  clear: both;
+}
+
+em{
+  font-style: normal;
+  background-color: #990100;
+  padding: .2em 1em;
+  margin: .2em;
+  clear: both;
+  display: inline-block;
+  color: #F6F6F6;
+  font-weight: 500;
+}
+
+.skill-item ul ul{
+  padding-left: 2em;
+}
+
+.skill-item ul ul li em{
+  background-color: #B90504;
+}
