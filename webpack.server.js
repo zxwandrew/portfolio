@@ -105,6 +105,9 @@ module.exports = [
     },{
       from: 'styles/fonts',
       to: 'dist/fonts'
+    },{
+      from: 'assets',
+      to: 'dist/assets'
     }
   ])]
   }

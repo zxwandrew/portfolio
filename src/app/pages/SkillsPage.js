@@ -6,7 +6,8 @@ class SkillsPage extends React.Component {
   render () {
     return (
       <div>
-        <h2>Technologies that I build with:</h2>
+        <h1 className='page-title'>Technologies that I build with:</h1>
+
         <div className='skill-item-container'>
 
           <div className='skill-item'>
