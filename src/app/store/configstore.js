@@ -4,11 +4,13 @@ import { createStore, combineReducers, compose, applyMiddleware } from 'redux';
 import { routerReducer, routerMiddleware } from 'react-router-redux';
 
 import {CounterReducer} from '../reducers/CounterReducer';
+import {ProjectsReducer} from '../reducers/ProjectsReducer';
 
 export function configureStore (history, initialState) {
   const reducer = combineReducers({
     routing: routerReducer,
-    counter: CounterReducer
+    counter: CounterReducer,
+    projects: ProjectsReducer,
   });
 
   const store = createStore(

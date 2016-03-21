@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
-import {getProjects} from '../api/portfolio'
+import {getProjects} from '../api/projects'
+import { Link } from 'react-router';
 import '../styles/Project.scss'
 import '../styles/core.scss';
 
@@ -13,7 +14,7 @@ class ProjectsPage extends React.Component {
       });
     };
 
-    const portfolioRows = projects.map((project) => {
+    const portfolioRows = projects.map((project, index) => {
       return(
         <div key={project.classname} className='project-card'>
           <div>
@@ -31,12 +32,14 @@ class ProjectsPage extends React.Component {
             </div>
           </div>
 
-          <div className='project-card-image-wrap'>
-            <img src={project.image} className='project-card-image'/>
-            <div className='project-card-image-overlay'>
-              <div className='overlay-title'>{project.title}</div>
+          <Link to={'/project/'+index}>
+            <div className='project-card-image-wrap'>
+              <img src={project.image} className='project-card-image'/>
+              <div className='project-card-image-overlay'>
+                <div className='overlay-title'>{project.title}</div>
+              </div>
             </div>
-          </div>
+        </Link>
 
           <div>
             {project.link? <div className='project-card-detail-bottom'><a href={project.link}>Visit Site</a></div> : null}

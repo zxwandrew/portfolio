@@ -17,21 +17,18 @@ class HeaderBar extends React.Component {
 
   toggleDropdown(){
     this.setState(function(state){
-
       return {showDropdown: !this.state.showDropdown}
     })
   }
 
   onDropdown(){
     this.setState(function(state){
-      console.log("what")
       return {showDropdown: true}
     })
   }
 
   offDropdown(){
     this.setState(function(state){
-      console.log("what")
       return {showDropdown: false}
     })
   }
