@@ -6,7 +6,7 @@
 
 @import "fa/_variables.scss";
 @import "fa/_mixins.scss";
-@import "fa/_path.scss";
+// @import "fa/_path.scss";
 @import "fa/_core.scss";
 @import "fa/_larger.scss";
 @import "fa/_fixed-width.scss";
@@ -17,6 +17,12 @@
 @import "fa/_stacked.scss";
 @import "fa/_icons.scss";
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url(/fonts/fontawesome-webfont.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 @font-face {
     font-family: AlrightSansWeb;
     font-weight: 400;
