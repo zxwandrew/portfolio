@@ -1,7 +1,9 @@
 import React, { PropTypes } from 'react';
-import { Link } from 'react-router';
+import { IndexLink, Link } from 'react-router';
 import '../styles/core.scss';
 import '../styles/HeaderBar.scss';
+
+const ACTIVE = { color: 'red' }
 
 class HeaderBar extends React.Component {
   constructor(props){
@@ -41,9 +43,9 @@ class HeaderBar extends React.Component {
 
           <div className= 'nav-list'>
             <ul className= 'nav-list'>
-              <li className='nav-link'><Link to='/'>About</Link></li>
-              <li className='nav-link'><Link to='/skills'>Skills</Link></li>
-              <li className='nav-link'><Link to='/projects'>Projects</Link></li>
+              <li className='nav-link'><IndexLink to='/'  activeClassName='nav-link-active' >About</IndexLink></li>
+              <li className='nav-link'><Link to='/skills'  activeClassName='nav-link-active'>Skills</Link></li>
+              <li className='nav-link'><Link to='/projects'  activeClassName='nav-link-active'>Projects</Link></li>
               <li className='nav-link'>
               <div className='dropdown-section' onMouseOver={this.onDropdown} onMouseOut={this.offDropdown}>
                 <a><span className='fa fa-bars dropdown-button'  onClick={this.toggleDropdown}></span></a>

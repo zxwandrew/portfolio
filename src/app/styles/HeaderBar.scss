@@ -1,3 +1,5 @@
+@import '_my-variables.scss';
+
 .nav-outer{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,6 +116,14 @@
   margin-left: 12px;
 }
 
+.nav-link-active{
+  color: $active-font-color;
+  cursor: default;
+}
+.nav-link-active:hover {
+  color: $active-font-color;
+  cursor: default;
+}
 .icon-link-container{
   list-style: none;
   list-style-type: none;

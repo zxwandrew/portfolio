@@ -14,9 +14,9 @@ class SkillsPage extends React.Component {
             <h4>Client Side</h4>
               <ul>
                 <li><em>React</em></li>
+                <li><em>Redux</em></li>
                 <li><em>Dojo</em></li>
                 <li><em>Meteor</em></li>
-                <li><em>Redux</em></li>
                 <li><em>Sass</em></li>
               </ul>
           </div>
@@ -64,22 +64,24 @@ class SkillsPage extends React.Component {
           </div>
 
           <div className='skill-item'>
-            <h4>Tools</h4>
+            <h4>Others</h4>
               <ul>
+                <li><em>Linux</em></li>
+                <li><em>WebSockets</em></li>
                 <li><em>Webpack</em></li>
                 <li><em>Gulp</em></li>
                 <li><em>Git</em></li>
                 <li><em>Mocha</em></li>
+                <li><em>Android Studio</em></li>
               </ul>
           </div>
 
           <div className='skill-item'>
-            <h4>Others</h4>
+            <h4>Non-CS</h4>
               <ul>
                 <li><em>Photoshop</em></li>
                 <li><em>Illustrator</em></li>
                 <li><em>Lightroom</em></li>
-                <li><em>Linux</em></li>
                 <li><em>MATLAB</em></li>
               </ul>
           </div>
