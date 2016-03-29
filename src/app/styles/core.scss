@@ -1,3 +1,5 @@
+@import '_my-variables.scss';
+
 @import 'HeaderBar.scss';
 @import 'FooterBar.scss';
 @import 'Project.scss';
@@ -16,6 +18,9 @@
 @import "fa/_rotated-flipped.scss";
 @import "fa/_stacked.scss";
 @import "fa/_icons.scss";
+
+
+
 
 @font-face {
   font-family: FontAwesome;
@@ -45,21 +50,21 @@
 }
 @media screen and (max-width: 900px) {
   .nav-container, .view-container{
-    padding: 0 12px;
+    padding: 0 10px;
   }
 }
 
 body, html {
     width: 100%;
     height: 100%;
-    background-color: #F6F6F6;
+    background-color: $html-background-color;
 }
 blockquote,body,button,code,dd,div,dl,dt,em,fieldset,form,
 h1,h2,h3,h4,h5,h6,html,legend,li,ol,p,pre,td,th,ul {
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
-    color: #333333
+    color: $primary-font-color;
 }
 img {
     border: 0;
@@ -69,13 +74,13 @@ img {
 }
 a {
   text-decoration: none;
-  color: #333333;
+  color: $primary-font-color;
 }
 a:hover {
-  color: #B90504;
+  color: $hover-font-color;
 }
 a:active {
-  color: #990100;
+  color: $active-font-color;
 }
 body,
 html {
@@ -85,21 +90,16 @@ html {
 ul {
     list-style: none
 }
-
 html{
   font-family: "AlrightSansWeb",Helvetica,Arial,sans-serif;
+}
+h1,h2, h3, h4, h5, h6, p{
+  padding: 0 20px;
 }
 h1{
   font-size: 3em;
   line-height: 2em;
 }
-a:link{
-
-}
-#app{
-  background-color: #FFFFFF;
-}
-
 
 .fade-wait-leave {
   opacity: 1;
@@ -139,8 +139,9 @@ a:link{
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background-color: #F6F6F6;
   width: 100vw;
+  min-height: 100vh;
+  height: 100%;
 }
 
 .view-container{
@@ -165,7 +166,7 @@ a:link{
   -ms-flex-align: center;
   align-items: center;
   max-width: 900px;
-  width: 98vw;
+  width: 94vw;
 
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -173,6 +174,8 @@ a:link{
   justify-content: center;
 
   height: 100%;
+  background-color: $page-background-color;
+  min-height: 100vh;
 }
 
 .view{
@@ -183,21 +186,30 @@ a:link{
   -ms-flex-align: start;
   align-items: flex-start;
   width: 100%;
-  margin-top: 140px;
+  margin-top: 80px;
+  height: 100%;
+
 }
 
-
 .span-highlight{
-  background-color: #E8E8E8;
-  color: #990100;
-  padding: 0 0.3em;
+  color: $accent-font-color;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+}
+.span-highlight>a{
+  padding: 0.25em 0 0.25em 0;
+  background-color: $link-background-color;
+  color: $accent-font-color;
+}
+.span-highlight>a:hover{
+  color: $hover-font-color;
 }
 .hidden{
   display:none;
 }
 
 .page-title{
-  margin-bottom: 1em;
+  margin: 1em 0 1em 0 ;
 }
 .page-title{
   font-weight: 400;

@@ -27,7 +27,7 @@ class ProjectDetailsPage extends React.Component {
 
     return(
       <div>
-        <h2>{currentProject.title}</h2>
+        <h2 className='page-title'>{currentProject.title}</h2>
 
           <div>
             <div className='project-card-detail-top'>
@@ -43,10 +43,10 @@ class ProjectDetailsPage extends React.Component {
           </div>
 
           <div className='project-details'>
-            {currentProject.details}
+            <p>{currentProject.details}</p>
           </div>
 
-          <div>
+          <div className='project-details'>
             {currentProject.link? <div className='project-card-detail-bottom'><a href={currentProject.link}>Visit Site</a></div> : null}
             {currentProject.git? <div className='project-card-detail-bottom'><a href={currentProject.git}>Github</a></div> : null}
           </div>

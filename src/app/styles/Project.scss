@@ -24,7 +24,7 @@
   flex: 1 1 880px;
   max-height: 700px;
   max-width: 900px;
-  margin-bottom: 5em;
+  margin-bottom: 8em;
 }
 
 .project-card-image-wrap{
@@ -32,8 +32,7 @@
   height: 100%;
   overflow: hidden;
   position: relative;
-  width: 96%;
-  margin: 0.5em 2%;
+  width: 100%;
 }
 
 .project-card-image{
@@ -47,6 +46,23 @@
   transform: scale(1);
   width: 100%;
 }
+
+.project-details{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  line-height: 200%;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 
 .project-card-detail-bottom{
   display: inline-block;

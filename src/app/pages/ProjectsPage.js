@@ -41,7 +41,7 @@ class ProjectsPage extends React.Component {
             </div>
         </Link>
 
-          <div>
+          <div className='project-details'>
             {project.link? <div className='project-card-detail-bottom'><a href={project.link}>Visit Site</a></div> : null}
             {project.git? <div className='project-card-detail-bottom'><a href={project.git}>Github</a></div> : null}
           </div>

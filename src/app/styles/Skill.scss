@@ -1,3 +1,5 @@
+@import '_my-variables.scss';
+
 .skill-item-container{
   display: -webkit-box;
   display: -webkit-flex;
@@ -6,7 +8,7 @@
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  
+
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -35,7 +37,7 @@ h4{
 
 em{
   font-style: normal;
-  background-color: #990100;
+  background-color: $accent-font-color;
   padding: .2em 1em;
   margin: .2em;
   clear: both;
@@ -44,10 +46,13 @@ em{
   font-weight: 500;
 }
 
+.skill-item ul{
+  padding-left: 20px;
+}
 .skill-item ul ul{
   padding-left: 2em;
 }
 
 .skill-item ul ul li em{
-  background-color: #B90504;
+  background-color: $hover-font-color;
 }
