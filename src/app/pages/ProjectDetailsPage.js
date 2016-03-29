@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import '../styles/core.scss';
 import '../styles/ProjectDetails.scss'
+import '../styles/Project.scss'
 
 import * as ProjectsActions from '../actions/ProjectsActions';
 
@@ -26,30 +27,40 @@ class ProjectDetailsPage extends React.Component {
     };
 
     return(
-      <div>
-        <h2 className='page-title'>{currentProject.title}</h2>
+      <div key={currentProject.classname} className='project-card'>
+        <div>
+          <h4>
+            {currentProject.title}
+          </h4>
 
           <div>
             <div className='project-card-detail-top'>
-              Technologies Used:
+              Tech:
             </div>
             <div className='project-card-detail-top'>
             {technologyRow(currentProject.technology)}
             </div>
           </div>
+        </div>
+
 
           <div className='project-card-image-wrap'>
             <img src={currentProject.image} className='project-card-image'/>
+            <div className='project-card-image-overlay'>
+              <div className='overlay-title'>{currentProject.title}</div>
+            </div>
           </div>
 
-          <div className='project-details'>
-            <p>{currentProject.details}</p>
-          </div>
+          <p>
+          {currentProject.details}
+          </p>
 
-          <div className='project-details'>
-            {currentProject.link? <div className='project-card-detail-bottom'><a href={currentProject.link}>Visit Site</a></div> : null}
-            {currentProject.git? <div className='project-card-detail-bottom'><a href={currentProject.git}>Github</a></div> : null}
-          </div>
+
+        <div className='project-details'>
+          {currentProject.link? <div className='project-card-detail-bottom'><a href={currentProject.link}>Visit Site</a></div> : null}
+          {currentProject.git? <div className='project-card-detail-bottom'><a href={currentProject.git}>Github</a></div> : null}
+        </div>
+
       </div>
 
     )

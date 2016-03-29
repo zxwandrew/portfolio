@@ -39,7 +39,7 @@ class ProjectsPage extends React.Component {
                 <div className='overlay-title'>{project.title}</div>
               </div>
             </div>
-        </Link>
+          </Link>
 
           <div className='project-details'>
             {project.link? <div className='project-card-detail-bottom'><a href={project.link}>Visit Site</a></div> : null}
