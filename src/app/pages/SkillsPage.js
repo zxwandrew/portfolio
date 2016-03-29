@@ -8,7 +8,7 @@ class SkillsPage extends React.Component {
       <div>
         <h1 className='page-title'>Technologies that I build with:</h1>
 
-        <div className='skill-item-container'>
+        <div className='skill-item-container .ie-skill-item-container'>
 
           <div className='skill-item'>
             <h4>Client Side</h4>

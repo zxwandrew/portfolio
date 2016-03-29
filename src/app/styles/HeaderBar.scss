@@ -68,6 +68,7 @@
   font-style: normal;
   position: relative;
   display:table-row;
+  margin-left: 12px;
 }
 .dropdown-menu{
   position: absolute;
@@ -84,8 +85,42 @@
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
+
 }
 
 .icon-link>a>i{
   font-style: normal;
+}
+
+.nav-list{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.nav-link{
+  font-size: 1em;
+  margin-left: 12px;
+}
+
+.icon-link-container{
+  list-style: none;
+  list-style-type: none;
+}
+.icon-link-container>li{
+  list-style-type: none;
+  list-style: none;
+  list-style-position: none;
 }

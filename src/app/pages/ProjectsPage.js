@@ -52,7 +52,7 @@ class ProjectsPage extends React.Component {
 
 
     return (
-      <div className="project-card-container">
+      <div>
         <h1 className='page-title'>Selected Projects</h1>
         {portfolioRows}
       </div>
