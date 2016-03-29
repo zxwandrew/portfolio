@@ -55,14 +55,15 @@ try {
             <RouterContext {...renderProps}/>
           </Provider>
         );
-        const clientsource = debug ? 'http://localhost:8080/dist/client.min.js' : '/client.min.js';
+        const clientSource = debug ? 'http://localhost:8080/dist/client.min.js' : '/client.min.js';
+        const stylesSource = debug ? 'http://localhost:8080/dist/styles.css' : '/styles.css';
         // console.log("MARKUP: "+markup)
         // if(debug){
         //   clientsource = 'http://localhost:8080/client.min.js';
         // }else{
         //   clientsource =  '/client.min.js';
         // }
-        this.render('index', {data: markup, client: clientsource, store: store});
+        this.render('index', {data: markup, client: clientSource, store: store, styles: stylesSource});
         callback(null);
       });
     });
