@@ -46,9 +46,6 @@ class ProjectDetailsPage extends React.Component {
 
           <div className='project-card-image-wrap'>
             <img src={currentProject.image} className='project-card-image'/>
-            <div className='project-card-image-overlay'>
-              <div className='overlay-title'>{currentProject.title}</div>
-            </div>
           </div>
 
           <p>
